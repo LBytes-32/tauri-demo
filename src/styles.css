@@ -1,14 +1,14 @@
-:root {
+html {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
   color: #0f0f0f;
-  background-color: #f3f0f0;
   user-select: none;
   border-image:round;
   
+  cursor:default;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,24 +17,16 @@
   -webkit-user-select: none;
 }
 
+
+
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0px;
-}
-
-.title-bar {
-  background-color: rgb(28, 28, 32);
-  color: white;
-  padding: 7px;
-  user-select: none;
   display: flex;
-  justify-content: space-between;
-  height: 20px;
-}
-
-.close-button {
-  background-color: rgb(46, 41, 41);
-  border-radius: 3px;
-  width: 25px;
-  text-align: center;
-  cursor: pointer;
+  flex-direction: column;
+  background-color: rgb(219, 213, 213);
+  border: solid;
+  box-sizing: border-box;
+  border-width: 1px;
 }

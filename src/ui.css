@@ -1,0 +1,46 @@
+
+.title-bar {
+    font-size        : 10pt;
+    height           : 20px;
+    padding          : 2px 2px 2px 8px;
+    background-color : rgb(66, 81, 219);
+    color            : white;
+    border           : solid;
+    border-width     : 1px;
+    border-color     : rgb(198, 211, 247) rgb(72, 74, 85) rgb(0,0,0) rgb(0,0,0);
+    margin:            0px 1px 0px 1px;
+    display          : flex;
+    justify-content  : space-between;
+    align-items      : center;
+}
+
+.close-button {
+    background-color: rgb(160, 160, 160);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 10pt;
+    line-height: 12pt;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.418));
+    cursor: pointer;
+    border: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    border-color: white white black black;
+    color: black;
+}
+
+.close-button:hover {
+    background-color: rgb(201, 201, 201);
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.726));
+}
+
+.content {
+    background-color: rgb(245, 238, 238);
+    height: 100%;
+    padding: 8px;
+    margin: 2px;
+    user-select: text;
+    -webkit-user-select: text;
+}
+
