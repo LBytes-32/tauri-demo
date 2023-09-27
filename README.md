@@ -77,3 +77,14 @@ let message = await invoke("rusty_greet", {
 })
 ```
 - ***Fun detail:*** Rust will convert **parameter names** from `camelCase` to `snake_case`!
+
+## Communicate with JSON
+- In Rust: Read JSON from file, work with it, stringify it, and send it.
+- In JavaScript: Do the same.
+```ts
+let message = await invoke<string>('rust_function').then(value => {
+    let p = (JSON.parse(value) as Person)
+    return `My name is ${p.name}!`
+})
+```
+- Communication revolves around sending a JSON string.
