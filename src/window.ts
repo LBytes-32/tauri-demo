@@ -1,14 +1,18 @@
 import { appWindow } from "@tauri-apps/api/window"
-import { Dom } from "./dom"
+import { Dom } from "./com"
+import { PersonRecord } from "./record"
 
 export class Window {
     titlebar    : HTMLDivElement
     closeButton : HTMLDivElement
     content     : HTMLDivElement
+    records     : PersonRecord[]
     
     constructor() {
+        this.records = []
+        
         // Initialize the title-bar.
-        this.titlebar = Dom.createDivOn(document.body, {
+        this.titlebar = Dom.newChild('div', document.body, {
             base: "title-bar",
             text: "User Database"
         })
@@ -23,7 +27,7 @@ export class Window {
         }
         
         // Initialize the close button.
-        this.closeButton = Dom.createDivOn(this.titlebar, {
+        this.closeButton = Dom.newChild('div', this.titlebar, {
             base: 'close-button',
             text: '×'
         })
@@ -33,13 +37,18 @@ export class Window {
         }
         
         // Initialize the content area
-        this.content = Dom.createDivOn(document.body, {
+        this.content = Dom.newChild('div', document.body, {
             base: "content"
         })
+        
     }
     
-    // Fetch people from storage.
-    fetchPeople() {
+    // Fetch records from storage.
+    fetch() {
+        
+    }
+    
+    createPerson() {
         
     }
 }

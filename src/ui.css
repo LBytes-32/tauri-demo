@@ -40,7 +40,42 @@
     height: 100%;
     padding: 8px;
     margin: 2px;
-    user-select: text;
-    -webkit-user-select: text;
 }
 
+.text-input-container {
+    background-color: white;
+    padding: 5px 10px 0px 5px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(122, 122, 122);
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.336));
+    margin: 2px;
+}
+
+.text-input-container:focus-within {
+    border-color: black;
+}
+
+.text-input-label {
+    font-size: 8pt;
+    color: rgb(88, 88, 88);
+    margin-left: 1pt;
+    line-height: 8px;
+}
+
+.text-input {
+    border: none;
+    line-height: 0px;
+    width: 100%;
+}
+
+.text-input:focus {
+    outline: none;
+}
+
+.flex-row {
+    display: flex;
+    justify-items: space-between;
+    background-color: rgba(0, 0, 0, 0.137);
+    padding: 5px;
+}
